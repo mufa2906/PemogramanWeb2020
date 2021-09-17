@@ -40,6 +40,15 @@ if (isset($_POST["cari"])) {
       <th>Aksi</th>
     </tr>
 
+    <?php if (empty($mahasiswa)) : ?>
+    <tr>
+      <td style="color:red;font-style:italic" colspan="4">
+        <p>data mahasiswa tidak ditemukan!</p>
+      </td>
+    </tr>
+
+    <?php endif; ?>
+
     <?php $num = 1;
     foreach ($mahasiswa as $m) : ?>
     <tr>
