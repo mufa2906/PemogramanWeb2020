@@ -68,7 +68,7 @@ if (isset($_POST["cari"])) {
       </td>
     </tr>
     <?php endforeach; ?>
-
+  </table>
 </body>
 
 </html>
